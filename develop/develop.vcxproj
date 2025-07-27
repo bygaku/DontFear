@@ -95,6 +95,8 @@
     <ClInclude Include="gaku_lib\include\object\static_object.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\resources\json\config.json" />
+    <None Include="..\resources\json\save.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
