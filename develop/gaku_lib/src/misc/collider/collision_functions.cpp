@@ -176,7 +176,7 @@ namespace collision_functions {
         float& penetration)
     {
         if (!PreCheck(a, b)) return false;
-        /*
+
         auto box_a = static_cast<const ColliderInfoBox*>(a);
         auto box_b = static_cast<const ColliderInfoBox*>(b);
 
@@ -219,8 +219,12 @@ namespace collision_functions {
         }
 
         hit_point = VAdd(center_a, VScale(hit_normal, half_a.x));
-        */
         return true;
+    }
+
+    bool TestSphereBox(const ColliderInfo* a, const ColliderInfo* b, const VECTOR& pos_a, const VECTOR& pos_b, VECTOR& hit_point, VECTOR& hit_normal, float& penetration)
+    {
+        return false;
     }
 
     // ========== Any vs Terrain ==========
@@ -284,4 +288,4 @@ namespace collision_functions {
 
     }
 
-} // namespace CollisionFunctions
+} // namespace collision_functions

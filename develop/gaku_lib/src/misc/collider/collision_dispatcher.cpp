@@ -20,7 +20,6 @@ CollisionDispatcher::CollisionDispatcher()
     RegisterCollisionFunc(Type::Capsule, Type::Sphere,
         collision_functions::TestCapsuleSphere);
 
-    /*
     //! Capsule vs Box
     RegisterCollisionFunc(Type::Capsule, Type::Box,
         collision_functions::TestCapsuleBox);
@@ -33,6 +32,7 @@ CollisionDispatcher::CollisionDispatcher()
     RegisterCollisionFunc(Type::Sphere, Type::Box,
         collision_functions::TestSphereBox);
 
+    /*
     //! Any vs Terrain (全タイプと地形の組み合わせ)
     RegisterCollisionFunc(Type::Sphere, Type::Terrain,
         collision_functions::TestAnyTerrain);
