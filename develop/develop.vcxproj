@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gaku_lib\src\app\application.cpp" />
+    <ClCompile Include="gaku_lib\src\app\game_time.cpp" />
+    <ClCompile Include="gaku_lib\src\app\input_manager.cpp" />
+    <ClCompile Include="gaku_lib\src\app\winmain.cpp" />
+    <ClCompile Include="gaku_lib\src\audio\adx_manager.cpp" />
+    <ClCompile Include="gaku_lib\src\component\animator.cpp" />
+    <ClCompile Include="gaku_lib\src\component\component.cpp" />
+    <ClCompile Include="gaku_lib\src\component\health.cpp" />
+    <ClCompile Include="gaku_lib\src\component\modeler.cpp" />
+    <ClCompile Include="gaku_lib\src\component\physics.cpp" />
+    <ClCompile Include="gaku_lib\src\component\rigidbody.cpp" />
+    <ClCompile Include="gaku_lib\src\component\transform.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\assert_dx.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_box.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_capsule.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_mesh.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_segment.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_sphere.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_terrain.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collision_dispatcher.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\collision_functions.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\collider\octree.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\json_loader.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\math.cpp" />
+    <ClCompile Include="gaku_lib\src\misc\utility_dx.cpp" />
+    <ClCompile Include="gaku_lib\src\object\collidable_object.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gaku_lib\include\app\application.hpp" />
+    <ClInclude Include="gaku_lib\include\app\game_time.hpp" />
+    <ClInclude Include="gaku_lib\include\app\input_manager.hpp" />
+    <ClInclude Include="gaku_lib\include\app\setting\input_data.hpp" />
+    <ClInclude Include="gaku_lib\include\app\setting\window_config.hpp" />
+    <ClInclude Include="gaku_lib\include\audio\adx_manager.hpp" />
+    <ClInclude Include="gaku_lib\include\component\animator.hpp" />
+    <ClInclude Include="gaku_lib\include\component\component.hpp" />
+    <ClInclude Include="gaku_lib\include\component\data\animation_data.hpp" />
+    <ClInclude Include="gaku_lib\include\component\health.hpp" />
+    <ClInclude Include="gaku_lib\include\component\modeler.hpp" />
+    <ClInclude Include="gaku_lib\include\component\physics.hpp" />
+    <ClInclude Include="gaku_lib\include\component\rigidbody.hpp" />
+    <ClInclude Include="gaku_lib\include\component\transform.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\assert_dx.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_data.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_all.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_box.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_capsule.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_mesh.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_segment.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_sphere.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_terrain.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_algorithms.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_dispatcher.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_functions.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\collider\octree.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\data\json_file_type.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\json_loader.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\math\math.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\math\quaternion.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\math\vector2d.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\aabb.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\capsule.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\line.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\point.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\primitive.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\primitive_all.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\segment.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\primitive\sphere.hpp" />
+    <ClInclude Include="gaku_lib\include\misc\utility_dx.hpp" />
+    <ClInclude Include="gaku_lib\include\object\character_object.hpp" />
+    <ClInclude Include="gaku_lib\include\object\collidable_object.hpp" />
+    <ClInclude Include="gaku_lib\include\object\data\object_data.hpp" />
+    <ClInclude Include="gaku_lib\include\object\game_object.hpp" />
+    <ClInclude Include="gaku_lib\include\object\static_object.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b1bbf469-68ba-440d-aff1-f1f496ef2cb3}</ProjectGuid>
+    <RootNamespace>develop</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/gaku_lib/include/;$(ProjectDir)/include/;$(SolutionDir)/resources/;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/gaku_lib/include/;$(ProjectDir)/include/;$(SolutionDir)/resources/;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/gaku_lib/include/;$(ProjectDir)/include/;$(SolutionDir)/resources/;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/gaku_lib/include/;$(ProjectDir)/include/;$(SolutionDir)/resources/;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)/libs/cri/include/;$(SolutionDir)/../Dxlib_h/;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/libs/cri/libs/x86/;$(SolutionDir)/../Dxlib_h/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);cri_ware_pcx64_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);cri_ware_pcx64_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)/libs/cri/include/;$(SolutionDir)/../Dxlib_h/;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)/libs/cri/libs/x64/;$(SolutionDir)/../Dxlib_h/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);cri_ware_pcx64_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);cri_ware_pcx64_le_import.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets" Condition="Exists('..\packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets'))" />
+  </Target>
+</Project>

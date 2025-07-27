@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GakuLib">
+      <UniqueIdentifier>{7a2e3dda-82fb-414a-bdf3-8ef5a3f5edd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src">
+      <UniqueIdentifier>{7f064e7f-6ed0-42b2-a418-fa27faf76b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include">
+      <UniqueIdentifier>{67bc463d-a324-4bca-913b-0ae1fbe9e521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{6a5826d6-563d-4a25-8a1d-e46c0f68ac42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src\app">
+      <UniqueIdentifier>{d8b3d0b9-d6dd-4338-9b4c-2af00ae23e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include\app">
+      <UniqueIdentifier>{f3c0d9b9-16ef-4b87-90a3-0f03346c5fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src\object">
+      <UniqueIdentifier>{b74a086f-20e5-45f9-8631-5dfd89e4e33a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src\misc">
+      <UniqueIdentifier>{502d9022-ba1f-4e8f-9250-ac506b442b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src\component">
+      <UniqueIdentifier>{68867bfd-8eb4-42ae-ad0d-0e5139330927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\src\audio">
+      <UniqueIdentifier>{82d31ed2-d622-409f-b555-3daec35312fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include\audio">
+      <UniqueIdentifier>{31325374-dcd1-4bf2-86cf-c4d3367f7258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include\component">
+      <UniqueIdentifier>{d59db99c-a6c3-42c4-808c-a71d9b9ba6a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include\misc">
+      <UniqueIdentifier>{fce5360b-7445-4f91-94ae-7ac92353a3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GakuLib\include\object">
+      <UniqueIdentifier>{c917676a-6e17-4268-b95a-2ff5acd38e82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gaku_lib\src\app\application.cpp">
+      <Filter>GakuLib\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\app\game_time.cpp">
+      <Filter>GakuLib\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\app\input_manager.cpp">
+      <Filter>GakuLib\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\assert_dx.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_box.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_capsule.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_mesh.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_segment.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_sphere.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collider_info_terrain.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collision_dispatcher.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\collision_functions.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\collider\octree.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\json_loader.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\math.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\misc\utility_dx.cpp">
+      <Filter>GakuLib\src\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\object\collidable_object.cpp">
+      <Filter>GakuLib\src\object</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\audio\adx_manager.cpp">
+      <Filter>GakuLib\src\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\animator.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\component.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\health.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\modeler.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\physics.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\rigidbody.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\component\transform.cpp">
+      <Filter>GakuLib\src\component</Filter>
+    </ClCompile>
+    <ClCompile Include="gaku_lib\src\app\winmain.cpp">
+      <Filter>GakuLib\src\app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gaku_lib\include\app\application.hpp">
+      <Filter>GakuLib\include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\app\game_time.hpp">
+      <Filter>GakuLib\include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\app\setting\input_data.hpp">
+      <Filter>GakuLib\include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\app\input_manager.hpp">
+      <Filter>GakuLib\include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\app\setting\window_config.hpp">
+      <Filter>GakuLib\include\app</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\audio\adx_manager.hpp">
+      <Filter>GakuLib\include\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\animator.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\component.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\data\animation_data.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\health.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\modeler.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\physics.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\rigidbody.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\component\transform.hpp">
+      <Filter>GakuLib\include\component</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\assert_dx.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_data.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_all.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_box.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_capsule.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_mesh.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_segment.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_sphere.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collider_info_terrain.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_algorithms.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_dispatcher.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\collision_functions.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\collider\octree.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\data\json_file_type.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\json_loader.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\math\math.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\math\quaternion.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\math\vector2d.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\aabb.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\capsule.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\line.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\point.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\primitive.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\primitive_all.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\segment.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\primitive\sphere.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\misc\utility_dx.hpp">
+      <Filter>GakuLib\include\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\object\character_object.hpp">
+      <Filter>GakuLib\include\object</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\object\collidable_object.hpp">
+      <Filter>GakuLib\include\object</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\object\data\object_data.hpp">
+      <Filter>GakuLib\include\object</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\object\game_object.hpp">
+      <Filter>GakuLib\include\object</Filter>
+    </ClInclude>
+    <ClInclude Include="gaku_lib\include\object\static_object.hpp">
+      <Filter>GakuLib\include\object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
