@@ -45,6 +45,7 @@
     <ClCompile Include="gaku_lib\src\misc\math.cpp" />
     <ClCompile Include="gaku_lib\src\misc\utility_dx.cpp" />
     <ClCompile Include="gaku_lib\src\object\collidable_object.cpp" />
+    <ClCompile Include="src\player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gaku_lib\include\app\application.hpp" />
@@ -93,6 +94,7 @@
     <ClInclude Include="gaku_lib\include\object\data\object_data.hpp" />
     <ClInclude Include="gaku_lib\include\object\game_object.hpp" />
     <ClInclude Include="gaku_lib\include\object\static_object.hpp" />
+    <ClInclude Include="include\player.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\resources\json\config.json" />

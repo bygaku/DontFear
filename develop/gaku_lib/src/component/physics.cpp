@@ -194,66 +194,18 @@ void Physics::FixFuturePosition(CollidableObject* higher, CollidableObject* lowe
 	auto lower_rd	 =  lower->GetRigidbody();
 
 	//! カプセル同士の座標修正
-	//if (higher_type == ColliderInfo::Type::Capsule && lower_type == ColliderInfo::Type::Capsule) {
-	//	VECTOR higher_to_lower_dir	= lower_rd.GetFuturePosition() - higher_rd.GetFuturePosition();
-	//	VECTOR higher_to_lower_norm = VNorm(higher_to_lower_dir);
+	if (higher_type == ColliderInfo::Type::Capsule && lower_type == ColliderInfo::Type::Capsule) {
+		VECTOR higher_to_lower_dir	= lower_rd.GetFuturePosition() - higher_rd.GetFuturePosition();
+		VECTOR higher_to_lower_norm = VNorm(higher_to_lower_dir);
 
-	//	auto higher_collider_info = dynamic_cast<ColliderInfoCapsule*>(higher->GetColliderInfo().get());
-	//	auto lower_collider_info  = dynamic_cast<ColliderInfoCapsule*>(lower->GetColliderInfo().get());
+		auto higher_collider_info = dynamic_cast<ColliderInfoCapsule*>(higher->GetColliderInfo().get());
+		auto lower_collider_info  = dynamic_cast<ColliderInfoCapsule*>(lower->GetColliderInfo().get());
 
-	//	//! そのままだとちょうど当たる位置になるので少し余分に離す
-	//	float awayDist = higher_collider_info->capsule_.radius_ + lower_collider_info->radius + 0.0001f;
-	//	VECTOR primaryToNewSecondaryPos = VScale(primaryToSecondaryN, awayDist);
-	//	VECTOR fixedPos = VAdd(primary->nextPos, primaryToNewSecondaryPos);
-	//	secondary->nextPos = fixedPos;
-	//}
+		//! 押し戻し処理をかく
+		
+	}
 	
-	//! ラインと円の座標修正
-	// HACK:現状lineは必ずstaticなのでprimaryにline,secondaryにcircleがくる。そうでないときはエラーを吐く
-	//if (
-	//	(higher_type == ColliderInfo::Type::Line2D || higher_type == ColliderInfo::Type::OneWayLine2D)
-	//	&& lower_type == ColliderInfo::Type::Circle2D)
-	//{
-	//	auto lineData = dynamic_cast<ColliderDataLine2D*>(primary->colliderData);
-	//	auto circleData = dynamic_cast<ColliderDataCircle2D*>(secondary->colliderData);
-	//	// secondaryが移動する円として処理
 
-	//	// 1.過去の位置→未来の位置の線分と、壁線分が交わるかどうかを調べる
-	//	float bothSegmentLength = (
-	//		Segment_Segment_MinLength(lower_rd.GetFuturePosition(), lower_rd.GetPosition(),
-	//			lineData->startPoint, lineData->endPoint)
-	//		);
-	//	bool isCross = (bothSegmentLength == 0);	// ２つの線分の最近接点までの距離が0なら交差している
-
-	//	// 後の計算で結局「壁線分上の、未来の位置（ベクトルの終端の点）との最近接点」が必要になるので
-	//	// 先に出しておく
-	//	VECTOR closestPtOnWallAndNextPos
-	//		= GetClosestPtOnSegment(secondary->nextPos, lineData->startPoint, lineData->endPoint);
-
-	//	// 2.交わる場合
-	//	if (isCross)
-	//	{
-	//		// 未来の位置の点から壁線分に対しておろした垂線との交点を調べる
-	//		// →垂線の交点＝「壁線分上の、未来の位置（ベクトルの終端の点）との最近接点」
-	//		// 最終的な位置は、垂線の交点から「未来の位置→垂線との交点 ベクトル方向」に円の半径分動かした位置
-	//		VECTOR nextToClosest = VSub(closestPtOnWallAndNextPos, secondary->nextPos);
-	//		VECTOR nextToClosestN = VNorm(nextToClosest);
-	//		VECTOR fixedPos = VAdd(closestPtOnWallAndNextPos, VScale(nextToClosestN, circleData->radius + 0.0001f));
-	//		secondary->nextPos = fixedPos;
-	//	}
-	//	// 3.交わらない場合
-	//	else
-	//	{
-	//		// 過去の位置→未来の位置の線分と、壁線分の最近接点を調べる
-	//		// その最近接点から壁線分に対しておろした垂線との交点を調べる
-	//		// →垂線の交点＝「壁線分上の、未来の位置（ベクトルの終端の点）との最近接点」
-	//		// 最終的な位置は、垂線の交点から「垂線の交点→未来の位置 ベクトル方向」に円の半径分動かした位置
-	//		VECTOR closestToNext = VSub(secondary->nextPos, closestPtOnWallAndNextPos);
-	//		VECTOR closestToNextN = VNorm(closestToNext);
-	//		VECTOR fixedPos = VAdd(closestPtOnWallAndNextPos, VScale(closestToNextN, circleData->radius + 0.0001f));
-	//		secondary->nextPos = fixedPos;
-	//	}
-	//}
 }
 
 void Physics::FixPosition() noexcept

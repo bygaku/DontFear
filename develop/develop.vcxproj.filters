@@ -49,6 +49,9 @@
     <Filter Include="resource\json">
       <UniqueIdentifier>{594b1a6a-5a39-4d33-9abe-fbf86cb9ea8a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="game_object\Player">
+      <UniqueIdentifier>{ac17a5f7-c0ce-481a-bf05-57601ef61184}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gaku_lib\src\app\application.cpp">
@@ -128,6 +131,9 @@
     </ClCompile>
     <ClCompile Include="gaku_lib\src\app\winmain.cpp">
       <Filter>gaku_lib\src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\player.cpp">
+      <Filter>game_object\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +274,9 @@
     </ClInclude>
     <ClInclude Include="gaku_lib\include\object\static_object.hpp">
       <Filter>gaku_lib\include\object</Filter>
+    </ClInclude>
+    <ClInclude Include="include\player.hpp">
+      <Filter>game_object\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

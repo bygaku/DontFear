@@ -42,6 +42,7 @@ public:
 
     /// @brief 次フレームの座標を取得
     const VECTOR& GetFuturePosition() const noexcept { return future_pos_; }
+
 private:
     VECTOR	   position_;			/// @brief 座標
     VECTOR	   direction_;			/// @brief 向き
